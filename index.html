@@ -11,26 +11,26 @@
 <body>
     <header>
         <nav>
-            <a href="#home"><img src="/css/images/logo-phs.jpeg" alt="Logo Grupo Power"></a>
-            <ul>
+            <a href="#home"><img class="logo" src="/css/images/logo-phs.png" alt="Logo Grupo Power"></a>
+            <ul class="menu">
                 <li> <a href="#plans" class="nav-plans">Planos</a></li>
                 <li><a href="#faq" class="nav-faq">Dúvidas</a></li>
-                <li><a href="tel:+4499999999" class="nav-contact">Contato</a></li>
-                <li><a href="tel:+4499999999" class="nav-request">Solicite uma ligação</a></li>
+                <li><a href="tel:+4499999999" target="_blank" class="nav-contact">Contato</a></li>
+                <li><a href="tel:+4499999999" target="_blank" class="nav-request">Solicite uma ligação</a></li>
                 <li><a href="https://desktopsigmanet.dualstack.speedtestcustom.com/" target="_blank"
                         class="nav-test">Testar
                         Velocidade</a></li>
-                <li><a href="tel:+4499999999" class="nav-contract">Contrato</a></li>
-                <li><a href="tel:+4499999999" class="nav-second-via">2º via</a></li>
-                <li><a href="tel:+4499999999" class="nav-signup">Assinar agora</a></li>
+                <li><a href="tel:+4499999999" target="_blank" class="nav-contract">Contrato</a></li>
+                <li><a href="tel:+4499999999" target="_blank" class="nav-second-via">2º via</a></li>
+                <li><a href="tel:+4499999999" target="_blank" class="nav-signup">Assinar agora</a></li>
             </ul>
         </nav>
     </header>
-    <div class="banner"><!--deixei essa div para quando for implementar o banner --></div>
+    <main id="home" class="banner"><!--deixei essa div para quando for implementar o banner --></main>
 
     <!--this div is for the all products section-->
-    <div class="products">
-        <p class="vermelho">NOSSOS SERVIÇOS</p>
+    <div id="products">
+        <h1 class="vermelho">NOSSOS SERVIÇOS</h1>
         <h1>Hoje a Power vai muuuuito além da internet.</h1>
 
         <!--this div section is for the power tv product-->
@@ -39,7 +39,7 @@
             <h5 class="nome-serviço">Power TV</h5>
             <P>Filmes, series e canais ao vivo - com telas
                 simultâneas inclusas nos planos.</P>
-                <a href="tel:+4499999999">Saber mais no WhatsApp</a>
+            <a href="tel:+4499999999">Saber mais no WhatsApp</a>
         </div>
 
         <!--this div section is for the power movel product-->
@@ -48,7 +48,7 @@
             <h5 class="nome-serviço">Power Móvel</h5>
             <P>Telefonia movel do Grupo Power para você
                 levar a conexão com você.</P>
-                <a href="tel:+4499999999">Saber mais no WhatsApp</a>
+            <a href="tel:+4499999999">Saber mais no WhatsApp</a>
         </div>
 
         <!--this div section is for the power fixo product-->
@@ -58,63 +58,106 @@
             <P>Linha de telefone fixo para sua casa ou
                 empresa.
                 <a href="tel:+4499999999">Saber mais no WhatsApp</a>
-        </P>
-    </div>
+            </P>
+        </div>
 
-    <!--this div section is for the power cam product-->
-    <div class="powercam">
-        <img src="/css/images/power-cam.jpeg" alt="Logo Power cam">
-        <h5 class="nome-serviço">Power Cam</h5>
-        <P>Câmeras e monitoramento para a segurança
-            do que importa.</P>
+        <!--this div section is for the power cam product-->
+        <div class="powercam">
+            <img src="/css/images/power-cam.jpeg" alt="Logo Power cam">
+            <h5 class="nome-serviço">Power Cam</h5>
+            <P>Câmeras e monitoramento para a segurança
+                do que importa.</P>
             <a href="tel:+4499999999">Saber mais no WhatsApp</a>
-    </div>
+        </div>
 
-    <!--this div section is for the power solaris product-->
-    <div class="powersolaris">
-        <img src="/css/images/power-solaris.jpeg" alt="Logo Power solaris">
-        <h5 class="nome-serviço">Power Solaris</h5>
-        <P>Energia solar: mais uma frente do grupo para
-            você economizar.</P>
+        <!--this div section is for the power solaris product-->
+        <div class="powersolaris">
+            <img src="/css/images/power-solaris.jpeg" alt="Logo Power solaris">
+            <h5 class="nome-serviço">Power Solaris</h5>
+            <P>Energia solar: mais uma frente do grupo para
+                você economizar.</P>
             <a href="tel:+4499999999">Saber mais no WhatsApp</a>
-    </div>
+        </div>
 
-    <!--this div section is for the power store product-->
-    <div class="powerstore">
-        <img src="/css/images/power-store.jpeg" alt="Logo Power store">
-        <h5 class="nome-serviço">Power Store</h5>
-        <P>Nossa loja de equipamentos e acessórios de
-            tecnologia.</P>
+        <!--this div section is for the power store product-->
+        <div class="powerstore">
+            <img src="/css/images/power-store.jpeg" alt="Logo Power store">
+            <h5 class="nome-serviço">Power Store</h5>
+            <P>Nossa loja de equipamentos e acessórios de
+                tecnologia.</P>
             <a href="tel:+4499999999">Saber mais no WhatsApp</a>
-    </div>
+        </div>
 
     </div>
-     
-  <!-- Plans Section -->
-    <div class="plans">
-        <p class="vermelho">PLANOS</p>
+
+    <!-- Plans Section -->
+    <div id="plans" class="plans">
+        <h1 class="vermelho">PLANOS</h1>
         <h1>Velocidade que combina com a sua rotina.</h1>
-        <p>Planos válidos para <span id="cidade">Cidade Gaúcha - PR</span>. Sem taxa de instalação escondida em letra miúda.</p>
+        <p>Planos válidos para <span id="cidade">Cidade Gaúcha - PR</span>. Sem taxa de instalação escondida em letra
+            miúda.</p>
 
-     <div class="plano light">
-      <h3>Light</h3>
-      <p>Plano ideal para uso moderado.</p>
-     </div>
+        <div class="plano light">
+            <h3>Light</h3>
+            <h3>250 <span class="mega">MEGA</span></h3>
+            <p>R$ 89,99</p>
+            <p>Pagando em dia: R$ 80,00</p>
+              <div class="beneficios">
+                  <p>Instalação gratuita</p>
+                  <p>Roteador em comodato</p>
+                  <p>Suporte 24h via WhatsApp e ligação</p>
+              </div>
+              <button class="detalhes-light">Detalhes</button>
+              <button class="btn-contratar">Contratar</button>
+        </div>
 
-      <div class="plano turbo">
-       <h3>Turbo</h3>
-       <p>Plano perfeito para usuários intensivos.</p>
-      </div>
+        <div class="plano turbo">
+            <p>MAIS VENDIDO</p>
+            <h3>Turbo</h3>
+            <h3>400 <span class="mega">MEGA</span></h3>
+            <p>R$ 109,99</p>
+            <p>Pagando em dia: R$ 100,00</p>
+              <div class="beneficios">
+                  <p>Até 2 telas PowerNet TV Mobile</p>
+                  <p>Instalação gratuita</p>
+                  <p>Atendimento presencial em até 18h úteis</p>
+              </div>
+              <button class="detalhes-turbo">Detalhes</button>
+              <button class="btn-contratar">Contratar</button>
+        </div>
 
-      <div class="plano gold">
-       <h3>Gold</h3>
-       <p>Plano ideal para usuários que exigem mais.</p>
-      </div>
+        <div class="plano gold">
+            <h3>Gold</h3>
+            <h3>600 <span class="mega">MEGA</span></h3>
+            <p>R$ 129,99</p>
+            <p>Pagando em dia: R$ 120,00</p>
+              <div class="beneficios">
+                  <p>Atendimento prioritário em até 8h úteis</p>
+                  <p>Rede interna gamer sem custo</p>
+                  <p>Até 3 telas PowerNet TV Mobile</p>
+              </div>
+              <button class="detalhes-mega">Detalhes</button>
+              <button class="btn-contratar">Contratar</button>
+        </div>
 
-      <div class="plano vip">
-       <h3>VIP</h3>
-       <p>Plano exclusivo para usuários premium.</p>
-      </div>
+        <div class="plano vip">
+            <h3>VIP</h3>
+            <h3>800 <span class="mega">MEGA</span></h3>
+            <p>R$ 159,99</p>
+            <p>Pagando em dia: R$ 150,00</p>
+              <div class="beneficios">
+                  <p>Atendimento presencial em até 4h úteis</p>
+                  <p>Até 4 telas PowerNet TV Mobile</p>
+                  <p>2º roteador gratuito (necessidade técnica)</p>
+              </div>
+              <button class="detalhes-vip">Detalhes</button>
+              <button class="btn-contratar">Contratar</button>
+        </div>
+    </div>
+    <div id="detalhes-phs">
+         <h1 class="vermelho">Por que o Grupo Power?</h1>
+         <p>Empresa da região, rede própria e gente de verdade no atendimento.</p>
+         <p>Instalação rápida, monitoramento 24h e atendimento humanizado pelo WhatsApp. A confiança de milhares de clientes no noroeste do Paraná.</p>
     </div>
 </body>
 
