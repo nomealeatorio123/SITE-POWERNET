@@ -32,5 +32,55 @@ justify-content: space-between;
    height: auto;
     
 }
+.banner {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative; /* Mantém os botões dentro do banner */
+}
 
+/* Esconde as caixas de seleção padronizadas do radio */
+.banner input[type="radio"] {
+    display: none;
+}
 
+.slides {
+    width: 300%;
+    height: 400px;
+    display: flex;
+}
+
+.slide {
+    width: 800px;
+    transition: 0.8s ease; /* Anima a troca de slide */
+}
+
+.slide img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Posiciona os botões manuais na base da imagem */
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10;
+}
+
+.manual-btn {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.manual-btn:hover {
+    background: #ffffff;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Power — Internet Fibra Óptica | Seja mais, seja Power!</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -26,11 +27,37 @@
             </ul>
         </nav>
     </header>
-    <main id="home" class="banner"><!--deixei essa div para quando for implementar o banner --></main>
+    <main id="home" class="banner">
+      <!-- Inputs do slider -->
+    <input type="radio" class="radio" name="radio-btn" id="radio1" checked>
+    <input type="radio" class="radio" name="radio-btn" id="radio2">
+    <input type="radio" class="radio" name="radio-btn" id="radio3"> 
+
+    <!-- Slides -->
+    <div class="slides">
+        <div class="slide first"><img src="/css/images/banner/slide1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="/css/images/banner/slide2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="/css/images/banner/slide3.jpg" alt="Slide 3"></div>
+    </div>
+
+    <!-- Navegação Manual -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+    </div>
+
+   <!--navigation auto-->
+    <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+    </div>
+</main>
 
     <!--this div is for the all products section-->
     <div id="products">
-        <h1 class="vermelho">NOSSOS SERVIÇOS</h1>
+        <h1 class="red">NOSSOS SERVIÇOS</h1>
         <h1>Hoje a Power vai muuuuito além da internet.</h1>
 
         <!--this div section is for the power tv product-->
@@ -92,12 +119,12 @@
 
     <!-- Plans Section -->
     <div id="plans" class="plans">
-        <h1 class="vermelho">PLANOS</h1>
+        <h1 class="red">PLANOS</h1>
         <h1>Velocidade que combina com a sua rotina.</h1>
-        <p>Planos válidos para <span id="cidade">Cidade Gaúcha - PR</span>. Sem taxa de instalação escondida em letra
+        <p>Planos válidos para <span id="city">Cidade Gaúcha - PR</span>. Sem taxa de instalação escondida em letra
             miúda.</p>
 
-        <div class="plano light">
+        <div class="light-plan">
             <h3>Light</h3>
             <h3>250 <span class="mega">MEGA</span></h3>
             <p>R$ 89,99</p>
@@ -111,7 +138,7 @@
               <button class="btn-contratar">Contratar</button>
         </div>
 
-        <div class="plano turbo">
+        <div class="turbo-plan">
             <p>MAIS VENDIDO</p>
             <h3>Turbo</h3>
             <h3>400 <span class="mega">MEGA</span></h3>
@@ -126,7 +153,7 @@
               <button class="btn-contratar">Contratar</button>
         </div>
 
-        <div class="plano gold">
+        <div class="gold-plan">
             <h3>Gold</h3>
             <h3>600 <span class="mega">MEGA</span></h3>
             <p>R$ 129,99</p>
@@ -140,7 +167,7 @@
               <button class="btn-contratar">Contratar</button>
         </div>
 
-        <div class="plano vip">
+        <div class="vip-plan">
             <h3>VIP</h3>
             <h3>800 <span class="mega">MEGA</span></h3>
             <p>R$ 159,99</p>
@@ -154,7 +181,7 @@
               <button class="btn-contratar">Contratar</button>
         </div>
     </div>
-    <div id="detalhes-phs">
+    <div id="about-phs">
          <h1 class="vermelho">Por que o Grupo Power?</h1>
          <p>Empresa da região, rede própria e gente de verdade no atendimento.</p>
          <p>Instalação rápida, monitoramento 24h e atendimento humanizado pelo WhatsApp. A confiança de milhares de clientes no noroeste do Paraná.</p>
